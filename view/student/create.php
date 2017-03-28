@@ -1,5 +1,5 @@
 <div class="container">
-	<form action="<?= URL ?>student/createSave" method="post">
+	<form action="<?= URL ?>Framework/createSave" method="post">
 	
 		<input type="text" name="firstname" placeholder="john">
 		<input type="text" name="lastname" placeholder="doe">

@@ -4,14 +4,14 @@ require(ROOT . "model/StudentModel.php");
 
 function index()
 {
-	render("student/index", array(
+	render("Framework/index", array(
 		'students' => getAllStudents()
 	));
 }
 
 function create()
 {
-	render("student/create");
+	render("Framework/create");
 }
 
 function createSave()
@@ -22,13 +22,13 @@ function createSave()
 		exit();
 	}
 
-	header("Location:" . URL . "student/index");
+	header("Location:" . URL . "Framework/index");
 }
 
 function edit()
 {
 
-	render("student/edit");	
+	render("Framework/edit");	
 }
 
 function editSave()
@@ -43,5 +43,5 @@ function delete($id)
 		exit();
 	}
 
-	header("Location:" . URL . "student/index");
+	header("Location:" . URL . "Framework/index");
 }

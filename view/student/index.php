@@ -14,11 +14,11 @@
 			<td><?= $student['student_firstname']; ?></td>
 			<td><?= $student['student_lastname']; ?></td>
 			<td><?= $student['student_gender']; ?></td>
-			<td><a href="<?= URL ?>student/edit/<?= $student['student_id'] ?>">Edit</a></td>
-			<td><a href="<?= URL ?>student/delete/<?= $student['student_id'] ?>">Delete</a></td>
+			<td><a href="<?= URL ?>Framework/edit/<?= $student['student_id'] ?>">Edit</a></td>
+			<td><a href="<?= URL ?>Framework/delete/<?= $student['student_id'] ?>">Delete</a></td>
 		</tr>
 		<?php } ?>
 
 	</table>
-	<a href="<?= URL ?>student/create">Toevoegen</a>
+	<a href="<?= URL ?>Framework/create">Toevoegen</a>
 </div>
